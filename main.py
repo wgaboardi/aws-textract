@@ -11,8 +11,8 @@ def extract_content() -> None:
       textract = boto3.client('textract')
 
       # Read the material list from the image file
-      #file_path = str(Path(__file__).parent / "images" / "lista-material-escolar.jpeg")
-      file_path = str(Path(__file__).parent / "images" / "cloud-formation.png")
+      file_path = str(Path(__file__).parent / "images" / "lista-material-escolar.jpeg")
+      #file_path = str(Path(__file__).parent / "images" / "cloud-formation.png")
       with open(file_path,"rb") as file:
             response = textract.detect_document_text(
                 Document={
