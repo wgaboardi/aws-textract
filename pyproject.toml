@@ -1,0 +1,10 @@
+[project]
+name = "read-material-list"
+version = "0.1.0"
+description = "Program that uses service AWS Textract to read material list"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "boto3>=1.35.63",
+    "boto3-stubs[textract]>=1.35.63",
+]
